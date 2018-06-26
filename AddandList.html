@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+    <script src="AddandList.js"></script>
+</head>
+<body onload="loaded();">
+    <div style="width: 33%; margin: auto;">
+    <table class="table table-sm">
+        <thead class="thead thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Sat</th>
+                <th>Gpa</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+
+    <div style= "width: 50%; margin: auto;">
+        <table style="margin-top: 50px;">
+        <tr>
+            <td>Id</td><td><input id="pId" type="text"></td>
+        </tr>
+        <tr>
+            <td>Name</td><td><input id="pName" type="text"></td>
+        </tr>
+        <tr>
+            <td>Sat</td><td><input id="pSat" type="text"></td>
+        </tr>
+        <tr>
+            <td>Gpa</td><td><input id="pGpa" type="text"></td>
+        </tr>
+        <tr>
+            <td>Year</td>
+            <td>
+                <select id="pYear">
+                    <option value="FR">Freshman</option>
+                    <option value="SO">Sophomore</option>
+                    <option value="JR">Junior</option>
+                    <option value="SR">Senior</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button style="width: 100%; margin-top: 35px;" class="btn btn-dark btn-lg" onclick="add();">Add</button>
+    </div>
+
+</div >
+</body>
+</html>

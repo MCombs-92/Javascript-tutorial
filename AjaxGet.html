@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/AjaxGet.js"></script>
+</head>
+<body>
+    <input type="number" id="iId">
+    <button class="btn btn-primary" onclick="get();">Get</button>
+    <table class="table table-striped">
+        <thead class="thead thead-dark">
+            <tr>
+                <th>Id</th>
+                <td id="pId"></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td id="pDesc"></td>
+            </tr>
+            <tr>
+                <th>Minimum Sat</th>
+                <td id="pMinSat"></td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</body>
+</html>

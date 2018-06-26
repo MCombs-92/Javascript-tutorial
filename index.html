@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script lang="javascript">
+        function factorial(nbr) {
+            var fact = 1;
+            for(var idx = nbr; idx >= 2; idx--) {
+                fact *= idx;
+            }
+            console.log(nbr, "factorial is",  fact);
+        }
+        function add1(nbr) {
+            console.log( nbr + 1 );
+        }
+    </script>
+</head>
+<body onload="factorial(6);factorial(5);factorial(4);factorial(3);factorial(2);">
+    
+</body>
+</html>
